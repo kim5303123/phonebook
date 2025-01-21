@@ -17,31 +17,32 @@
 
 	<p>등록된 전화번호 리스트입니다.</p>
 
-
+	<c:forEach items="${list }" var="vo">
 	<table border="1">
 		<tr>
 			<th>이름(name)</th>
-			<td></td>
+			<td>${vo.name }</td>
 		</tr>
 		<tr>
 			<th>핸드폰(hp)</th>
-			<td></td>
+			<td>${vo.hp }</td>
 		</tr>
 		<tr>
 			<th>회사(company)</th>
-			<td></td>
+			<td>${vo.tel }</td>
 		</tr>
 		<tr>
-			<td><a href="">[삭제]</a>
+			<td><a href="<c:url value="/delete/${vo.id }" />">[삭제]</a>
 			</td>
-			<td><a href="">[수정]</a>
+			<td><a href="<c:url value="/modify/${vo.id }" />">[수정]</a>
 			</td>
 		</tr>
 
 	</table>
+	</c:forEach>
 	<br>
-
-	<a href="">추가번호 등록</a>
+	
+	<a href="<c:url value="/wirte" />">추가번호 등록</a>
 
 </body>
 
