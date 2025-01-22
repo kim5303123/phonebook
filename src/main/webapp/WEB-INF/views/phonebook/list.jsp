@@ -42,7 +42,7 @@
 	</c:forEach>
 	<br>
 	
-	<a href="<c:url value="/wirte" />">추가번호 등록</a>
+	<a href="<c:url value="/write" />">추가번호 등록</a>
 
 </body>
 
