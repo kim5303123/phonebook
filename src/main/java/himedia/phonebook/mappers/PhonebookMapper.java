@@ -24,4 +24,7 @@ public interface PhonebookMapper {
 //	<update id="update" parameterType="phonebookVo">
 	int update(PhonebookVo phonebookVo);
 	
+//	<delete id="delete" parameterType="int">
+	int delete(Integer id);
+	
 }
